@@ -64,12 +64,6 @@ vercel
 update it in the future, just replace this file with a new PDF — keep the exact same filename
 (`resume.pdf`) and no code changes are needed.
 
-## ⚠️ Action required: add your real LinkedIn URL
-
-`src/App.jsx` currently uses a placeholder LinkedIn link (`https://www.linkedin.com/`) in the
-Contact section, marked with a `// TODO` comment. Replace it with your real LinkedIn profile URL
-before deploying.
-
 ## Notes
 
 - No backend, database, authentication, analytics, or contact form backend are included by

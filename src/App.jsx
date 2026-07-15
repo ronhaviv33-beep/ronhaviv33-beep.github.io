@@ -376,15 +376,14 @@ function Contact() {
             <span className="contact-link-label">GitHub</span>
             <span className="contact-link-value">github.com/ronhaviv33-beep</span>
           </a>
-          {/* TODO: replace with Ron's real LinkedIn profile URL */}
           <a
             className="card contact-link"
-            href="https://www.linkedin.com/"
+            href="https://www.linkedin.com/in/ron-haviv-4617bb233/"
             target="_blank"
             rel="noopener noreferrer"
           >
             <span className="contact-link-label">LinkedIn</span>
-            <span className="contact-link-value">linkedin.com</span>
+            <span className="contact-link-value">linkedin.com/in/ron-haviv</span>
           </a>
         </div>
       </div>
