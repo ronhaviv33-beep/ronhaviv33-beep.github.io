@@ -58,17 +58,11 @@ npm install -g vercel
 vercel
 ```
 
-## ⚠️ Action required: add your real resume
+## Resume
 
-`public/resume.pdf` in this repo is **only a placeholder text file**, not a real PDF. The site's
-"View Resume" buttons link to `/resume.pdf`, so before you deploy for real:
-
-1. Export/save your actual resume as a PDF.
-2. Replace `public/resume.pdf` with that file, keeping the exact same filename (`resume.pdf`).
-3. No code changes are needed — the button already points at `/resume.pdf`.
-
-Until you do this, visitors who click "View Resume" will download a placeholder text file
-instead of your CV.
+`public/resume.pdf` contains the real CV. The "View Resume" buttons link to `/resume.pdf`, so to
+update it in the future, just replace this file with a new PDF — keep the exact same filename
+(`resume.pdf`) and no code changes are needed.
 
 ## ⚠️ Action required: add your real LinkedIn URL
 
