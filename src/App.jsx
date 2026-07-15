@@ -78,14 +78,18 @@ function Hero() {
         <p className="eyebrow">Ron Haviv</p>
         <h1 className="hero-title">SOC/MDR Analyst | AI Security Builder</h1>
         <h2 className="hero-headline">
-          Cybersecurity Analyst focused on incident response, identity security, and AI agent
+          Cybersecurity analyst focused on incident response, identity security, and AI agent
           runtime intelligence.
         </h2>
         <p className="hero-description">
           I investigate security incidents across endpoint, identity, cloud, email, and network
           environments. Alongside my SOC/MDR work, I&rsquo;m building ObserveAgents &mdash; an AI
-          Agent Runtime Intelligence platform focused on visibility, detection rules, and control
-          recommendations for AI agent behavior.
+          Agent Runtime Intelligence platform that uses runtime evidence, detection rules, and
+          control recommendations to help teams understand AI agent behavior.
+        </p>
+        <p className="hero-currently">
+          Currently working as a SOC/MDR Analyst while building security tooling for AI agent
+          observability and runtime detection.
         </p>
         <div className="hero-actions">
           <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="btn btn-primary">

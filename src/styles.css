@@ -213,10 +213,32 @@ ul {
 }
 
 .hero-description {
-  margin: 0 0 36px;
+  margin: 0 0 20px;
   font-size: 1.05rem;
   color: var(--color-muted);
   max-width: 640px;
+}
+
+.hero-currently {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0 0 36px;
+  padding: 8px 14px;
+  border: 1px solid var(--color-border);
+  border-radius: 999px;
+  background: var(--color-surface);
+  font-size: 0.85rem;
+  color: var(--color-muted);
+}
+
+.hero-currently::before {
+  content: "";
+  flex-shrink: 0;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--color-accent-2);
 }
 
 .hero-actions {
