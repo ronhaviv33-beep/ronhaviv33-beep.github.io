@@ -10,7 +10,6 @@ const NAV_LINKS = [
   { id: "contact", label: "Contact" },
 ];
 
-const OBSERVEAGENTS_URL = "https://github.com/ronhaviv33-beep/ObserveAgents.ai";
 const OBSERVEAGENTS_SITE_URL = "https://www.observeagents.ai/";
 
 function scrollToId(id) {
@@ -96,9 +95,6 @@ function Hero() {
         <div className="hero-actions">
           <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="btn btn-primary">
             View Resume
-          </a>
-          <a href={OBSERVEAGENTS_URL} target="_blank" rel="noopener noreferrer" className="btn btn-secondary">
-            View ObserveAgents
           </a>
           <a
             href="#contact"
