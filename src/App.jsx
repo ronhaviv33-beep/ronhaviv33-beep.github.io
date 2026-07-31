@@ -221,8 +221,7 @@ function Project() {
   return (
     <section id="project" className="section">
       <div className="container">
-        <p className="section-label">Project</p>
-        <h2 className="section-title">Featured Project</h2>
+        <p className="section-label section-label-standalone">Project</p>
 
         <div className="card project-card">
           <div className="project-card-header">
