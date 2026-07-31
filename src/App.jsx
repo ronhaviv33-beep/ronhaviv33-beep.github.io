@@ -11,6 +11,7 @@ const NAV_LINKS = [
 ];
 
 const OBSERVEAGENTS_URL = "https://github.com/ronhaviv33-beep/ObserveAgents.ai";
+const OBSERVEAGENTS_SITE_URL = "https://www.observeagents.ai/";
 
 function scrollToId(id) {
   const el = document.getElementById(id);
@@ -247,8 +248,8 @@ function Project() {
               </li>
             ))}
           </ul>
-          <a href={OBSERVEAGENTS_URL} target="_blank" rel="noopener noreferrer" className="btn btn-primary">
-            View Project on GitHub
+          <a href={OBSERVEAGENTS_SITE_URL} target="_blank" rel="noopener noreferrer" className="btn btn-primary">
+            Site
           </a>
         </div>
       </div>
