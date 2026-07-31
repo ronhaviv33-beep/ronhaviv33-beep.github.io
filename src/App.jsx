@@ -371,15 +371,6 @@ function Contact() {
           </a>
           <a
             className="card contact-link"
-            href="https://github.com/ronhaviv33-beep"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <span className="contact-link-label">GitHub</span>
-            <span className="contact-link-value">github.com/ronhaviv33-beep</span>
-          </a>
-          <a
-            className="card contact-link"
             href="https://www.linkedin.com/in/ron-haviv-4617bb233/"
             target="_blank"
             rel="noopener noreferrer"
