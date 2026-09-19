@@ -120,11 +120,11 @@ function About() {
         <h2 className="section-title">About Me</h2>
         <div className="about-content">
           <p>
-            I&rsquo;m a cybersecurity professional with hands-on experience in security
-            monitoring, incident response, phishing investigation, identity security, root cause
-            analysis, and threat hunting. I work with SIEM, EDR, identity, SaaS, and network
-            security telemetry to investigate suspicious activity, determine incident scope, and
-            support remediation.
+            I&rsquo;m a SOC/MDR Analyst experienced in investigating endpoint, identity, cloud,
+            email, and network incidents across a high-volume, multi-customer environment.
+            Skilled in correlating SIEM, EDR, SaaS, identity, and network telemetry to determine
+            scope, root cause, impact, and remediation, with hands-on involvement in detection
+            tuning and exclusion analysis.
           </p>
           <p>
             I&rsquo;m also building ObserveAgents, a security and observability platform for AI
@@ -157,24 +157,32 @@ function Experience() {
             <ul className="bullet-list">
               <li>
                 Investigate and respond to endpoint, identity, cloud, email, and network security
-                incidents in a fast-paced SOC/MDR environment.
+                incidents in a high-volume SOC/MDR environment supporting more than 70 customer
+                environments.
               </li>
               <li>
-                Analyze alerts from SIEM, EDR, identity, SaaS, and network security platforms to
-                determine severity, scope, and business impact.
+                Perform log-based investigations across Microsoft Sentinel, Microsoft Defender
+                for Endpoint, Microsoft Entra ID, Microsoft 365, CrowdStrike Falcon, QRadar,
+                SentinelOne, Netskope, Zscaler, Cato Networks, and firewalls.
               </li>
               <li>
-                Investigate phishing, malware activity, account compromise, suspicious
-                authentication, Kerberos-related activity, and endpoint threats.
+                Coordinate investigations and remediation with customers, security, IT, and
+                system owners while maintaining clear findings, timelines, actions, and
+                escalation records.
               </li>
               <li>
-                Correlate telemetry from Microsoft Sentinel, Microsoft Defender for Endpoint,
-                Microsoft Entra ID, Microsoft 365, CrowdStrike Falcon, QRadar, SentinelOne,
-                Netskope, Zscaler, Cato Networks, and firewall platforms.
+                Investigate authentication and identity-related incidents involving Microsoft
+                Entra ID, Okta, Active Directory, Kerberos activity, MFA behavior, and suspicious
+                sign-in patterns.
               </li>
               <li>
-                Produce customer-facing incident summaries with investigation findings, root
-                cause, affected assets, and remediation recommendations.
+                Independently prioritize investigations according to severity, business impact,
+                available evidence, and SLA requirements.
+              </li>
+              <li>
+                Investigate security alerts, analyze false-positive patterns, assess exclusion
+                risk, and recommend narrowly scoped detection-rule tuning to customers and
+                integration teams.
               </li>
             </ul>
           </div>
@@ -182,22 +190,14 @@ function Experience() {
           <div className="card timeline-item">
             <div className="timeline-header">
               <div>
-                <h3 className="timeline-role">NOC / Technical Operations Experience</h3>
+                <h3 className="timeline-role">NOC Engineer &mdash; Ness Technologies</h3>
+                <p className="timeline-meta">Israel</p>
               </div>
+              <p className="timeline-dates">2023 &mdash; 2024</p>
             </div>
             <ul className="bullet-list">
-              <li>
-                Monitored enterprise infrastructure, network systems, applications, and service
-                availability.
-              </li>
-              <li>
-                Worked with monitoring and infrastructure platforms including PRTG, VMware,
-                Checkmk, and enterprise monitoring tools.
-              </li>
-              <li>
-                Investigated operational alerts, escalated incidents, and supported
-                troubleshooting across IT environments.
-              </li>
+              <li>Monitored enterprise infrastructure and network availability.</li>
+              <li>Worked with PRTG, VMware, CheckMK, and enterprise monitoring platforms.</li>
             </ul>
           </div>
         </div>
@@ -229,11 +229,10 @@ function Project() {
             <p className="project-subtitle">AI Agent Runtime Intelligence Platform</p>
           </div>
           <p className="project-description">
-            Designed and developed an AI agent runtime intelligence platform for visibility,
-            discovery, and control recommendations. The system ingests OpenTelemetry traces and
-            runtime events, discovers running AI agents and dependencies, maps tools, MCP servers,
-            providers, and applies detection rules to identify risky behavior, unknown agents,
-            failed workflows, and high-risk control candidates in a Gateway Control Center.
+            Built an AI agent runtime intelligence platform that ingests OpenTelemetry and SDK
+            events, maps agent dependencies and tools, and applies detection rules to identify
+            risky behavior and failed workflows &mdash; giving teams visibility, discovery, and
+            control recommendations for AI agents running in production.
           </p>
           <ul className="highlight-grid">
             {PROJECT_HIGHLIGHTS.map((item) => (
@@ -256,50 +255,42 @@ const SKILL_CARDS = [
   {
     title: "Security Operations",
     skills: [
-      "Threat Hunting",
       "Incident Response",
+      "Threat Hunting",
       "Alert Triage",
       "Root Cause Analysis",
-      "Malware Investigation",
-      "Phishing Investigation",
-      "Threat Intelligence",
+      "Detection Tuning",
+      "Exclusion Risk Assessment",
     ],
   },
   {
-    title: "Identity & Cloud Security",
-    skills: [
-      "Microsoft Entra ID",
-      "Microsoft 365 Security",
-      "Okta",
-      "Active Directory",
-      "Kerberos",
-      "Suspicious Authentication",
-      "Account Compromise Investigation",
-    ],
-  },
-  {
-    title: "SIEM / EDR / Security Tools",
+    title: "Security Platforms",
     skills: [
       "Microsoft Sentinel",
-      "CrowdStrike Falcon",
-      "Microsoft Defender for Endpoint",
       "QRadar",
+      "CrowdStrike Falcon",
+      "Defender for Endpoint",
       "SentinelOne",
-      "Netskope",
-      "Zscaler",
-      "Cato Networks",
-      "Firewall Investigation",
+      "Cortex XDR",
+      "Entra ID",
+      "Okta",
     ],
   },
   {
-    title: "AI Security & Product",
+    title: "Cloud, SASE & AI",
     skills: [
-      "AI Agent Runtime Intelligence",
+      "AWS CloudTrail",
+      "Azure Activity Logs",
+      "Cato",
+      "Netskope",
+      "Zscaler",
+      "Python",
+      "SQL",
+      "Regex",
+      "REST APIs",
       "OpenTelemetry",
-      "Runtime Events",
-      "Detection Rules",
-      "Gateway Control Recommendations",
-      "SaaS Product Development",
+      "RAG",
+      "MCP",
     ],
   },
 ];
