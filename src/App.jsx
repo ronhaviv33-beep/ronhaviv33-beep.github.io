@@ -4,7 +4,7 @@ import { Analytics } from "@vercel/analytics/react";
 const NAV_LINKS = [
   { id: "about", label: "About" },
   { id: "experience", label: "Experience" },
-  { id: "project", label: "Project" },
+  { id: "project", label: "Projects" },
   { id: "skills", label: "Skills" },
   { id: "education", label: "Education" },
   { id: "contact", label: "Contact" },
@@ -217,34 +217,74 @@ const PROJECT_HIGHLIGHTS = [
   "Python SDK for low-friction integration",
 ];
 
+const REGEX_BUILDER_TAGS = [
+  "Python",
+  "Streamlit",
+  "Regex",
+  "EDR Tuning",
+  "Detection Engineering",
+  "Pytest",
+];
+
+const REGEX_BUILDER_HIGHLIGHTS = [
+  "Generalizes only what genuinely varies (GUIDs, versions, hashes, PyInstaller temp dirs) while preserving security-relevant literals",
+  "Refuses to produce the over-broad patterns analysts commonly write — never wildcards a path component",
+  "Validated against real production exclusions; 568 automated tests",
+];
+
 function Project() {
   return (
     <section id="project" className="section">
       <div className="container">
-        <p className="section-label section-label-standalone">Project</p>
+        <p className="section-label section-label-standalone">Projects</p>
 
-        <div className="card project-card">
-          <div className="project-card-header">
-            <h3 className="project-name">ObserveAgents</h3>
-            <p className="project-subtitle">AI Agent Runtime Intelligence Platform</p>
+        <div className="project-list">
+          <div className="card project-card">
+            <div className="project-card-header">
+              <h3 className="project-name">ObserveAgents</h3>
+              <p className="project-subtitle">AI Agent Runtime Intelligence Platform</p>
+            </div>
+            <p className="project-description">
+              Built an AI agent runtime intelligence platform that ingests OpenTelemetry and SDK
+              events, maps agent dependencies and tools, and applies detection rules to identify
+              risky behavior and failed workflows &mdash; giving teams visibility, discovery, and
+              control recommendations for AI agents running in production.
+            </p>
+            <ul className="highlight-grid">
+              {PROJECT_HIGHLIGHTS.map((item) => (
+                <li key={item}>
+                  <span className="highlight-marker" aria-hidden="true" />
+                  {item}
+                </li>
+              ))}
+            </ul>
+            <a href={OBSERVEAGENTS_SITE_URL} target="_blank" rel="noopener noreferrer" className="btn btn-primary">
+              Site
+            </a>
           </div>
-          <p className="project-description">
-            Built an AI agent runtime intelligence platform that ingests OpenTelemetry and SDK
-            events, maps agent dependencies and tools, and applies detection rules to identify
-            risky behavior and failed workflows &mdash; giving teams visibility, discovery, and
-            control recommendations for AI agents running in production.
-          </p>
-          <ul className="highlight-grid">
-            {PROJECT_HIGHLIGHTS.map((item) => (
-              <li key={item}>
-                <span className="highlight-marker" aria-hidden="true" />
-                {item}
-              </li>
-            ))}
-          </ul>
-          <a href={OBSERVEAGENTS_SITE_URL} target="_blank" rel="noopener noreferrer" className="btn btn-primary">
-            Site
-          </a>
+
+          <div className="card project-card">
+            <div className="project-card-header">
+              <h3 className="project-name">Falcon Exclusion Regex Builder</h3>
+            </div>
+            <p className="project-description">
+              A local tool that turns Windows process telemetry into safe, CrowdStrike-compatible
+              regex for IOA exclusions &mdash; with built-in risk scoring that tells an analyst why
+              a given exclusion is dangerous.
+            </p>
+            <div className="skill-tags project-tags">
+              {REGEX_BUILDER_TAGS.map((tag) => (
+                <span className="skill-tag" key={tag}>
+                  {tag}
+                </span>
+              ))}
+            </div>
+            <ul className="bullet-list project-bullets">
+              {REGEX_BUILDER_HIGHLIGHTS.map((item) => (
+                <li key={item}>{item}</li>
+              ))}
+            </ul>
+          </div>
         </div>
       </div>
     </section>
